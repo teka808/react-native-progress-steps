@@ -14,7 +14,7 @@ class StepIcon extends Component {
           borderRadius: 20,
           backgroundColor: this.props.activeStepIconColor,
           borderColor: this.props.activeStepIconBorderColor,
-          borderWidth: 5,
+          borderWidth: this.props.activeStepIconBorderWidth,
           bottom: 2,
         },
         circleText: {
@@ -180,6 +180,7 @@ StepIcon.propTypes = {
   borderWidth: PropTypes.number,
   borderStyle: PropTypes.string,
   activeStepIconBorderColor: PropTypes.string,
+  activeStepIconBorderWidth: PropTypes.string,
 
   progressBarColor: PropTypes.string,
   completedProgressBarColor: PropTypes.string,
@@ -208,6 +209,7 @@ StepIcon.defaultProps = {
   borderWidth: 3,
   borderStyle: 'solid',
   activeStepIconBorderColor: '#4BB543',
+  activeStepIconBorderWidth: 2,
 
   progressBarColor: '#ebebe4',
   completedProgressBarColor: '#4BB543',
